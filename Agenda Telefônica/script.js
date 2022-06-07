@@ -1,4 +1,5 @@
 let agenda = [];
+let escolha;
 
 do{
     const menu = `
@@ -74,4 +75,6 @@ do{
     }else{
         alert("Opção inválida!")
     }
-}while(true);
+
+    escolha = prompt("Deseja continuar? S/N");
+}while(escolha === "S" || escolha === "s");
